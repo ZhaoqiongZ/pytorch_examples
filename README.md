@@ -39,7 +39,7 @@ pip install -r requirements.txt
 > [!NOTE]  
 > PT2E is actively being developed and optimized. Advanced users are recommended to install PyTorch nightly wheels or build from source to get the latest changes in the stock PyTorch master before using a PT2E example.
 
-1. **Download the Dataset ImageNet**: We recommend calibration with a real dataset. Please Download ImageNet. If you don't want to use a dataset, you can also set dummy data for the following script.
+1. **Download the Dataset ImageNet**: We recommend calibration with real dataset, please [Download ImageNet](https://image-net.org/challenges/LSVRC/2012/2012-downloads.php). If you don't want to use dataset, you can also set dummy data for the following script.
 
 2. **Run the script**: Execute the script in your terminal:
    
