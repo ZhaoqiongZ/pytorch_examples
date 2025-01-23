@@ -35,7 +35,7 @@ with torch.no_grad():
 _, predicted = torch.max(output, 1)
 print("Predicted class index:", predicted.item())
 
-# Load ImageNet class index, can be download at https://github.com/raghakot/keras-vis/blob/master/resources/imagenet_class_index.json
+# Load ImageNet class index
 with open('imagenet_class_index.json') as f:
     class_idx = json.load(f)
 

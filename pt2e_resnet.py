@@ -143,7 +143,7 @@ def main():
     _, predicted = torch.max(output, 1)
     print("Predicted class index:", predicted.item())
 
-    # Load ImageNet class index, ImageNet_class_index.json can be download at https://github.com/Jasonlee1995/ImageNet-1K/blob/main/ImageNet_class_index.json
+    # Load ImageNet class index
     with open('ImageNet_class_index.json') as f:
         class_idx = json.load(f)
 
