@@ -23,6 +23,20 @@ The above installation is for Intel® Core™ Ultra Series 2 with Intel® Arc™
 pip install -r requirements.txt
 ```
 
+### Step 4: Huggingface/wandb Login 
+
+During the execution, you may need to log in your Hugging Face account to download model files from online mode. Refer to [HuggingFace Login](https://huggingface.co/docs/huggingface_hub/quick-start#login)
+
+```bash
+huggingface-cli login --token <your_token_here>
+```
+
+**Note**: During the execution, you need to log in your wandb account. Refer to [Wandb Login](https://docs.wandb.ai/ref/cli/wandb-login)
+
+```bash
+wandb login
+```
+
 ### Step 4: Run Qwen/Qwen2-0.5B Lora Finetuning
 
 **Run the script**: Execute the script in your terminal:
