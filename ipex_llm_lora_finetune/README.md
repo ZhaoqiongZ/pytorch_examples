@@ -1,4 +1,4 @@
-# Classification and detection with PyTorch on Intel Client GPU (Windows Platform)
+# Qwen Lora Finetuning with PyTorch & IPEX on Intel Client GPU (Windows Platform)
 
 ### Step 1: Install Intel Graphics Driver
 
