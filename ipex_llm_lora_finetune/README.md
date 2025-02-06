@@ -37,7 +37,7 @@ huggingface-cli login --token <your_token_here>
 wandb login
 ```
 
-### Step 4: Run Qwen/Qwen2-0.5B Lora Finetuning
+### Step 5: Run Qwen/Qwen2-0.5B Lora Finetuning
 
 **Run the script**: Execute the script in your terminal:
 
