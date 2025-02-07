@@ -15,7 +15,7 @@ conda install libuv
 python -m pip install torch==2.5.1+cxx11.abi torchvision==0.20.1+cxx11.abi torchaudio==2.5.1+cxx11.abi intel-extension-for-pytorch==2.5.10+xpu --extra-index-url https://pytorch-extension.intel.com/release-whl/stable/lnl/us/
 ```
 
-The above installation is for Intel® Core™ Ultra Series 2 with Intel® Arc™ Graphics(Lunar Lake) with Windows OS, for other Intel GPU hardware, please refer to [IPEX Installation](https://pytorch-extension.intel.com/installation?platform=gpu&version=v2.5.10%2Bxpu)
+The above installation is for Intel® Core™ Ultra Series 2 with Intel® Arc™ Graphics(Lunar Lake) with Windows OS, for other Intel GPU hardware or Linux platform, please refer to [IPEX Installation](https://pytorch-extension.intel.com/installation?platform=gpu&version=v2.5.10%2Bxpu)
 
 ### Step 3: Install required packages for lora-finetuning
 
