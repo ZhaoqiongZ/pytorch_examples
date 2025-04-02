@@ -22,7 +22,7 @@ The above installation is for Windows OS, for Linux platform, please refer to [I
 pip install -r requirements.txt
 ```
 
-### Step 4: Huggingface/wandb Login 
+### Step 4: Huggingface Login 
 
 During the execution, you may need to log in your Hugging Face account to download model files from online mode. Refer to [HuggingFace Login](https://huggingface.co/docs/huggingface_hub/quick-start#login)
 
