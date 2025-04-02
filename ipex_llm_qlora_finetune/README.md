@@ -40,7 +40,7 @@ bash run_qlora_client.sh
 
 ### Step 6: Run inference with quantized model
 
-There will be an FileNotFoundError for libbitsandbytes_cpu.dll, but we don't need this package, so please ignore this and continue running, we are upstream to PyTorch to fix it in following release.
+There will be a FileNotFoundError for libbitsandbytes_cpu.dll, but we don't need this package. Please ignore this and continue running. We are upstream to PyTorch to fix it in the following release
 
 ```bash
 # set quant_type and max_new_tokens according to your needs
