@@ -64,6 +64,7 @@ def pt2e_calib(model, val_loader_calib):
         export_model = export_for_training(
             model,
             inputs,
+            strict=True
         ).module()
         prepare_model = (
             prepare_pt2e(export_model, quantizer)
