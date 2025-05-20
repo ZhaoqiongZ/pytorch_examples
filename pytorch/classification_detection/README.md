@@ -1,4 +1,6 @@
-# Introduction
+# Classification & Object Detection Examples of PyTorch* Intel GPU
+
+## Introduction
 
 This guide provides instructions for running classification and detection tasks using PyTorch on an Intel Client GPU (Windows Platform). It includes steps for installing necessary drivers and software, running ResNet classification with FP16 AMP, Faster R-CNN detection with FP16 AMP, and ResNet classification with INT8 PT2E.
 
@@ -11,12 +13,16 @@ This guide provides instructions for running classification and detection tasks 
 
 #### Step 2: Install PyTorch and other required packages
 
-> [!NOTE]  
-> We highly recommend installing an Anaconda environment. 
+> [!NOTE]
+> We highly recommend installing an Anaconda environment.
 
 **Run the installation command**: Copy the command provided and run it in your terminal to install PyTorch on Intel GPU:
 ```bash
-pip install torch==2.6.0 torchvision --index-url https://download.pytorch.org/whl/test/xpu
+python -m venv env_run
+source env_run/bin/activate
+pip install --upgrade pip
+
+pip install torch==2.7.0 torchvision --index-url https://download.pytorch.org/whl/test/xpu
 pip install -r requirements.txt
 ```
 
@@ -36,13 +42,13 @@ pip install -r requirements.txt
 
 #### Step 5: Run ResNet Classification with INT8 PT2E
 
-> [!NOTE]  
+> [!NOTE]
 > PT2E is actively being developed and optimized. Advanced users are recommended to install PyTorch nightly wheels or build from source to get the latest changes in the stock PyTorch master before using a PT2E example.
 
 1. **Download the Dataset ImageNet**: We recommend calibration with real dataset, please [Download ImageNet](https://image-net.org/challenges/LSVRC/2012/2012-downloads.php). If you don't want to use dataset, you can also set dummy data for the following script.
 
 2. **Run the script**: Execute the script in your terminal:
-   
+
    If you have downloaded the ImageNet Dataset:
 
    ```bash
@@ -50,7 +56,7 @@ pip install -r requirements.txt
    ```
 
    If you preferred to use Dummy Dataset:
-   
+
    ```bash
    python pt2e_resnet.py --dummy
    ```
