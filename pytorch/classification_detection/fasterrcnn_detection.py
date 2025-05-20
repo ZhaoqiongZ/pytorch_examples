@@ -2,7 +2,7 @@ import torch
 import torchvision
 from torchvision.models.detection import fasterrcnn_resnet50_fpn
 from torchvision.transforms import functional as F
-from torch.cuda.amp import autocast
+from torch.amp import autocast
 from PIL import Image
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches

@@ -1,7 +1,7 @@
 import torch
 import torchvision
 import torchvision.transforms as transforms
-from torch.cuda.amp import autocast
+from torch.amp import autocast
 from PIL import Image
 import json
 

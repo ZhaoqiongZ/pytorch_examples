@@ -36,7 +36,7 @@ def accuracy(output, target, topk=(1,)):
             correct_k = correct[:k].reshape(-1).float().sum(0, keepdim=True)
             res.append(correct_k.mul_(100.0 / batch_size))
         return res
-    
+
 def pt2e_calib(model, val_loader_calib):
     import torch.ao.quantization.quantizer.xpu_inductor_quantizer as xpuiq
     import torch.ao.quantization.quantizer.x86_inductor_quantizer as xiq
@@ -64,6 +64,7 @@ def pt2e_calib(model, val_loader_calib):
         export_model = export_for_training(
             model,
             inputs,
+            strict=True
         ).module()
         prepare_model = (
             prepare_pt2e(export_model, quantizer)
