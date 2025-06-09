@@ -1,6 +1,6 @@
-# C++/CUDA Extensions in PyTorch
+# C++/CUDA/SYCL Extensions in PyTorch
 
-An example of writing a C++/CUDA extension for PyTorch. See
+An example of writing a C++/CUDA/SYCL extension for PyTorch. See
 [here](https://pytorch.org/tutorials/advanced/cpp_custom_ops.html) for the accompanying tutorial.
 This repo demonstrates how to write an example `extension_cpp.ops.mymuladd`
 custom op that has both custom CPU and CUDA kernels.
